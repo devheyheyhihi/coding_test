@@ -11,7 +11,7 @@ const moves = [1,5,3,5,1,2,1,4]
 const coding_test = (board,moves) => {
     let basket = [];
     let answer = 0;
-    for(i = 0; i < moves.length; i++) {
+    for(let i = 0; i < moves.length; i++) {
         for(const row of board) {
             if(row[moves[i]-1] !== 0) {
                 basket.push(row[moves[i]-1]);

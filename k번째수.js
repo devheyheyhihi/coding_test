@@ -8,6 +8,14 @@
 // 2에서 나온 배열의 3번째 숫자는 5입니다.
 //     배열 array, [i, j, k]를 원소로 가진 2차원 배열 commands가 매개변수로 주어질 때, commands의 모든 원소에 대해 앞서 설명한 연산을 적용했을 때 나온 결과를 배열에 담아 return 하도록 solution 함수를 작성해주세요.
 
-const solution = () => {
-    
+const solution = (array, commands) => {
+    let answer = commands.map((command) => {
+        return array.slice( command[0] - 1, command[1] ).sort()[command[2]-1]
+    })
+
+    return answer;
 }
+
+const array = [1, 5, 2, 6, 3, 7, 4];
+const commands = [[2, 5, 3], [4, 4, 1], [1, 7, 3]];
+console.log(solution(array, commands));
