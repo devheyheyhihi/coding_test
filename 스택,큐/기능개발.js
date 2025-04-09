@@ -53,9 +53,5 @@ const speeds1 = [1, 30, 5];
 const progresses2 = [95, 90, 99, 99, 80, 99];
 const speeds2 = [1, 1, 1, 1, 1, 1];
 
-const progresses3 = [93, 30, 55];
-const speeds3 =  [1, 30, 5];
-
 console.log(solution2(progresses1,speeds1));
 console.log(solution2(progresses2,speeds2));
-console.log(solution2(progresses3,speeds3));
